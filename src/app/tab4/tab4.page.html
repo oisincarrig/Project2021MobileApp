@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      My Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    
+      <ion-title size="large">Profile</ion-title>
+
+      <h3>User</h3>
+    
+  </ion-header>
+  <h3>Update Profile Picture</h3>
+  <ion-button (click)="Camera()">Camera</ion-button>
+  <hr>
+  <h3>Share Your Location</h3>
+  <ion-button (click)="GPS()">GPS</ion-button>
+  <br>
+  {{lat}},{{long}};
+</ion-content>
