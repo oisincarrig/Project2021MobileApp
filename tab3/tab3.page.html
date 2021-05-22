@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Messages
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="story-section">
+  <div id ="divider"></div>
+  <h3>Your Messages</h3>
+    <div class ="stories">
+      <div class="story" *ngFor="let story of [].constructor(10);let i = index">
+        <ion-avatar>
+          <i class="fi-rr-plus-small" *ngIf="i==0"></i>
+          <img src="https://i.pravatar.cc/{{(i+10)*10}}" alt="">
+        </ion-avatar>
+        <p>User</p>
+      </div>
+    </div>
+</div>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+   
+  </ion-header>
+</ion-content>

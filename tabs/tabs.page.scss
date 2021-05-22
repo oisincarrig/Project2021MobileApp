@@ -1,0 +1,12 @@
+ion-tab-bar{
+    box-shadow: 0 11px 38px #ec1ab4;
+    height: 5em;
+    i{
+        font-size: 1.5rem;
+    }
+
+    ion-tab-button{
+        --color-selected: #e6243d;
+         --ripple-color: #fff; 
+    }
+}
